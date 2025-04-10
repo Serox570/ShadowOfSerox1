@@ -1,21 +1,86 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Games - Shadow Of Serox</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Shadow Of Serox - Games</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px #000;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .game-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .game-card {
+      background: #1a1a1a;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #000;
+      text-align: center;
+      width: 250px;
+      transition: transform 0.3s;
+    }
+
+    .game-card:hover {
+      transform: scale(1.05);
+    }
+
+    .game-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .play-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background-color: #00cc99;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .play-button:hover {
+      background-color: #00e6b8;
+    }
+  </style>
 </head>
 <body>
-  <nav>
-    <h1>Shadow Of Serox</h1>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-    </ul>
-  </nav>
-  <section>
-    <h2 class="fade-in">Games</h2>
-    <p class="slide-in">Soon you'll be able to play dark-themed strategy games like <strong>Shadow Realms: Dice of Destiny</strong>.</p>
-  </section>
+  <header>
+    <h1>Shadow Of Serox - Games</h1>
+  </header>
+
+  <div class="game-list">
+    <div class="game-card">
+      <h3>Flappy Bird</h3>
+      <img src="images/flappybird.png" alt="Flappy Bird">
+      <p>Tap or press to flap and dodge the pipes!</p>
+      <a href="flappy_bird_game/index.html" class="play-button">Play Now</a>
+    </div>
+  </div>
 </body>
 </html>
